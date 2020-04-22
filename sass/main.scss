@@ -54,6 +54,45 @@ body{
 /* HEADER */
 @import "header.scss";
 
+/* MAIN CONTENT */
+main{
+    margin-bottom:30px;
+    .plans{
+        margin-top:75px;
+        .plan-item{
+            padding:24px;
+            background-color: $White;
+            border-radius: 25px;
+            box-shadow: $BoxShadow;
+            h1{
+                font-weight:bold;
+            }
+            p{
+                font-size:18px;
+                line-height: 24px;
+            }
+            .price{
+                margin-top:42px;
+                font-size:24pt;
+                font-weight:normal;
+            }
+            .price::after{
+                font-size:12pt;
+                line-height:24pt;
+                vertical-align:text-top;
+                margin-left:10px;
+                content:"/ mês + taxas";
+            }
+            button{
+                height:48px;
+                border-radius:24px;
+                margin-top:15px;
+                padding-left:30px;
+                padding-right:30px;
+            }
+        }
+    }
+}
 
 
     
