@@ -1,0 +1,53 @@
+/*   PALETA DE CORES   */
+$HanPurple: #5533ff;
+$UltramarineBlue: #4454ff;
+$DimGray: #666666;
+$BurntSienna: #e46c4c;
+$DeepSkyBlue: #00b5fa;
+$DeepSkyBlue2: #05d5ff;
+$CornFlowerBlue: #768df4;
+$Manatee: #999999;
+$Shamrock: #4ce49d;
+$Aquamarine: #65eee0;
+$Aquamarine2: #8df9d3;
+$Timberwolf: #d8d8d8;
+$BananaYellow: #ffdf27;
+$Gainsboro: #dedede;
+$Platinum: #e6e4e4;
+$Munsell: #f2f2f2;
+$WhiteSmoke: #f4f4f4;
+$White: #ffffff;
+$BoxShadow: 0px 0px 14px 0px rgba(0,0,0,0.15);
+
+/* CORES */
+.white{
+    color: $White;
+}
+.dimgray{
+    color: $DimGray;
+}
+.manatee{
+    color: $Manatee;
+}
+
+/* FUNDOS */
+.bg-white{
+    background-color: $White;
+    color: $CornFlowerBlue;
+}
+.bg-shamrock{
+    background-color: $Shamrock !important;
+    color: $White;
+}
+.bg-burntsienna{
+    background-color: $BurntSienna !important;
+    color: $White;
+}
+.bg-bananayellow{
+    background-color: $BananaYellow !important;
+    color: $White;
+}
+
+/*  FONTES  */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+$fonteDefault: 'Lato', sans-serif;

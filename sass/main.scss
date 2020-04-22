@@ -1,8 +1,59 @@
+/*   IMPORTANDO VARIÁVEIS, MEDIA-QUERIES E OUTROS CONTEÚDOS REUTILIZÁVEIS   */
+@import "variables.scss";
+@import "mobile.scss";
+
+
+/* COMMOM */
 body{
-    background-color: #c6c6c6;
+    background-color: $WhiteSmoke;
+    overflow-x:hidden;
     h1{
-        color: #000000;
+        font-family: $fonteDefault;
+        font-weight: regular;
+        font-size: 28pt;
+    }
+    h2{
+        font-family: $fonteDefault;
+        font-weight: bold;
+        font-size: 21pt;
+    }
+    h3{
+        font-family: $fonteDefault;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    h4{
+        font-family: $fonteDefault;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    li{
+        font-family: $fonteDefault;
+        font-weight: normal;
+        font-size: 18pt;
+    }
+    a{
+        font-family: $fonteDefault;
+        font-weight: normal;
+        font-size: 18pt;
+    }
+    p{
+        font-family: $fonteDefault;
+        font-weight: normal;
+        font-size: 14pt;
+        line-height: 24px;
+    }
+    button{
+        font-family: $fonteDefault;
+        font-weight: bold;
+        font-size: 16pt;
+        border:none;
     }
 }
-    
+
+/* HEADER */
+@import "header.scss";
+
+
+
     
