@@ -2,52 +2,57 @@
 @import "variables.scss";
 @import "mobile.scss";
 
+* {font-family: $fonteDefault;}
+
+/* Responsive fonts */
+
+@media (max-width: 575)  { html { font-size: 12pt}  }
+@media (min-width: 768px) { html { font-size: 14pt}  }
+@media (min-width: 992px) { html { font-size: 16pt }  }
+@media (min-width: 1200px) { html { font-size: 18pt}  }
 
 /* COMMOM */
+* { outline: 0!important;}
+
+html { scroll-behavior: smooth; }
+
 body{
     background-color: $WhiteSmoke;
     overflow-x:hidden;
     h1{
-        font-family: $fonteDefault;
         font-weight: regular;
-        font-size: 28pt;
+        font-size: 1.55rem;
     }
     h2{
-        font-family: $fonteDefault;
         font-weight: bold;
-        font-size: 21pt;
-        line-height:24px;
+        font-size: 1.16rem;
+        line-height:1.33rem;
     }
     h3{
-        font-family: $fonteDefault;
         font-weight: bold;
-        font-size: 14pt;
+        font-size:0.77rem;
     }
     h4{
-        font-family: $fonteDefault;
         font-weight: bold;
-        font-size: 11pt;
+        font-size: 0.61rem;
     }
     li{
-        font-family: $fonteDefault;
         font-weight: normal;
-        font-size: 18pt;
+        font-size: 1rem;
     }
     a{
-        font-family: $fonteDefault;
         font-weight: normal;
-        font-size: 18pt;
+        font-size: 1rem;
+        text-decoration:none !important;
     }
     p{
-        font-family: $fonteDefault;
         font-weight: normal;
-        font-size: 14pt;
-        line-height: 24px;
+        font-size: 0.77rem;
+        line-height: 1.33rem;
     }
     button{
-        font-family: $fonteDefault;
         font-weight: bold;
-        font-size: 16pt;
+        font-size:0.88rem;
         border:none;
         height:48px;
         border-radius:24px;
@@ -73,20 +78,20 @@ main{
                 font-weight:bold;
             }
             p{
-                font-size:18px;
-                line-height: 24px;
+                font-size:1rem;
+                line-height:1.33rem;
             }
             button{
                 margin-top:15px;
             }
             .price{
                 margin-top:42px;
-                font-size:24pt;
+                font-size:1.33rem;
                 font-weight:normal;
             }
             .price::after{
-                font-size:12pt;
-                line-height:24pt;
+                font-size:0.66rem;
+                line-height:1.33rem;
                 vertical-align:text-top;
                 margin-left:10px;
                 content:"/ mês + taxas";
@@ -101,31 +106,31 @@ main{
         .info{
             margin-left:92px;
             .name{
-                font-size:18pt;
-                margin-top:7px;
+                font-size:1rem;
+                margin-top:-4px;
                 margin-bottom:0px;
             }
             .description{
-                font-size:11pt;
+                font-size:0.61rem;
                 margin-top:3px;
                 margin-bottom:0px;
-                line-height:17px;
+                line-height:0.95rem;
             }
         }
         .testimonial{
             blockquote{
                 padding:0px 30px 0px 30px;
-                font-size:12pt;
-                line-height:20px;
+                font-size:0.66rem;
+                line-height:1.11rem;
             }
             blockquote::before{
                 content:"“";
-                font-size:18pt;
+                font-size:1rem;
                 color: $UltramarineBlue;
             }
             blockquote::after{
                 content:"”";
-                font-size:18pt;
+                font-size:1rem;
                 color: $UltramarineBlue;
             }
         }
@@ -136,6 +141,19 @@ main{
             border-radius: 24px;
             box-shadow: $BoxShadow;
             margin-left:-5px;
+            height:48px;
+            color: $UltramarineBlue !important;
+            font-size: 0.77rem;
+            padding-left:35px;
+        }
+        ::-webkit-input-placeholder { 
+        color: $UltramarineBlue !important;
+        }
+        :-ms-input-placeholder { 
+        color: $UltramarineBlue !important;
+        }
+        ::placeholder {
+        color: $UltramarineBlue !important;
         }
     }
 }
