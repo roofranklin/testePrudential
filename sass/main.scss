@@ -92,6 +92,43 @@ main{
             }
         }
     }
+    .testimonials{
+        margin-top:80px;
+        img{
+            float:left;
+        }
+        .info{
+            margin-left:92px;
+            .name{
+                font-size:18pt;
+                margin-top:7px;
+                margin-bottom:0px;
+            }
+            .description{
+                font-size:11pt;
+                margin-top:3px;
+                margin-bottom:0px;
+                line-height:17px;
+            }
+        }
+        .testimonial{
+            blockquote{
+                padding:0px 30px 0px 30px;
+                font-size:12pt;
+                line-height:20px;
+            }
+            blockquote::before{
+                content:"“";
+                font-size:18pt;
+                color: $UltramarineBlue;
+            }
+            blockquote::after{
+                content:"”";
+                font-size:18pt;
+                color: $UltramarineBlue;
+            }
+        }
+    }
 }
 
 
