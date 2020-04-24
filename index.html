@@ -110,9 +110,9 @@
     </header>
     <main>
       <div class="container">
-        <section ng-controller="listPlans" class="plans wow fadeInDown" data-wow-duration="1s"">
+        <section ng-controller="listPlans" class="plans" data-wow-duration="1s"">
           <div class="row">
-            <div ng-repeat="plan in plans" class="col-md-4">
+            <div ng-repeat="plan in plans" class="col-md-4 wow fadeInDown">
               <div class="plan-item">
                 <h1 class="ultramarineblue" ng-bind="plan.name"></h1>
                 <p class="manatee" ng-bind="plan.description"></p>
@@ -122,7 +122,7 @@
             </div>
           </div>  
         </section>
-        <section class="testimonials wow fadeInUp" data-wow-duration="1s"">
+        <section class="testimonials wow fadeInDown" data-wow-duration="1s"">
           <div class="testimonials-list">
             <div class="testimonials-item">
               <div class="row">

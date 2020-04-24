@@ -190,6 +190,11 @@ header{
             margin-top:24px;
             margin-left:24px;
         }
+        button:hover{
+            background-color: $HanPurple !important;
+            transition: background-color 0.5s ease;
+            color: $White;
+        }
         .cellphone{
             height: 533px;
             width: 300px;
@@ -262,6 +267,11 @@ main{
             button{
                 margin-top:15px;
             }
+            button:hover{
+                background-color: $HanPurple !important;
+                transition: background-color 0.5s ease;
+                color: $White;
+            }
             .price{
                 margin-top:42px;
                 font-size:1.33rem;
@@ -330,6 +340,11 @@ main{
             color: $UltramarineBlue !important;
             font-size: 0.77rem;
             padding-left:35px;
+        }
+        button:hover{
+            background-color: $HanPurple !important;
+            transition: background-color 0.5s ease;
+            color: $White;
         }
         ::-webkit-input-placeholder { 
         color: $UltramarineBlue !important;
