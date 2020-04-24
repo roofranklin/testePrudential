@@ -1,5 +1,11 @@
 /* SMARTPHONES */
 @media (max-width: 575.98px) { 
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+    }
     .desktop-logo, .desktop-menu{
         display:none;
     }
