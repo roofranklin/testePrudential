@@ -17,7 +17,7 @@
 html { scroll-behavior: smooth; }
 
 body{
-    background-color: $WhiteSmoke;
+    background-color: $White;
     overflow-x:hidden;
     h1{
         font-weight: regular;
@@ -97,6 +97,13 @@ main{
                 content:"/ mês + taxas";
             }
         }
+        .col-md-4:nth-child(2){
+            .plan-item{
+                padding-top:42px;
+                padding-bottom:42px;
+                margin-top:-18px;
+            }
+        }
     }
     .testimonials{
         margin-top:80px;
@@ -158,5 +165,44 @@ main{
     }
 }
 
+/* FOOTER */
+footer{
+    margin-top:100px;
+    .footer-bg-overlay{
+        position: absolute;
+        right: -5%;
+        margin-top:-10px;
+        height: 195px;
+        width: 35%;
+        background-image: -webkit-linear-gradient(-180deg, #f2f2f2 0%, #e6e4e4 100%);
+        background-image: -moz-linear-gradient(-180deg, #f2f2f2 0%, #e6e4e4 100%);
+        background-image: -o-linear-gradient(-180deg, #f2f2f2 0%, #e6e4e4 100%);
+        background-image: linear-gradient(-180deg, #f2f2f2 0%, #e6e4e4 100%);
+        -webkit-transform:  rotate(-9deg);
+        -ms-transform:  rotate(-9deg);
+        transform:  rotate(-9deg);
+        opacity: 0.5;
+    }
+    .footer-top{
+        border-bottom: 205px solid $Munsell;
+        border-left: 100vw solid transparent;
+        width: 0;
+        height: 0;
+    }
+    .footer-content{
+        width: 100%;
+        height: 105px;
+        background-color: $Munsell;
+        p{
+            text-align: center;
+            margin-top:40px;
+        }
+        svg{
+            margin-left:50px;
+            position:absolute;
+            margin-top:-105px;
+        }
+    }
+}
 
     
