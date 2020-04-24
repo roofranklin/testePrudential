@@ -114,5 +114,23 @@
             margin-right:5px;
         }
     }
+    .footer-bg-overlay{
+        right: -25% !important;
+        margin-top:-35px !important;
+    }
+    .footer-top{
+        border-bottom:60px solid #f2f2f2 !important;
+    }
+    .footer-content{
+        height:170px !important;
+        svg{
+            margin-left:calc(50% - 46px) !important;
+            position:unset !important;
+            margin-top:30px !important;
+        }
+        p{
+            font-size:0.95rem;
+        }
+    }
 
 }
