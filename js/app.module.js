@@ -1,3 +1,3 @@
-var testePrudential = angular.module('testePrudential', []);
+const testePrudential = angular.module('testePrudential', []);
 
 

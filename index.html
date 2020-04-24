@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Angular -->
     <script src="js/angular/angular.min.js"></script>
@@ -86,8 +90,8 @@
           <div class="row">
             <div ng-repeat="plan in plans" class="col-md-4">
               <div class="plan-item">
-                <h1 class="ultramarineblue">{{ plan.name }}</h1>
-                <p class="manatee">{{ plan.description }}</p>
+                <h1 class="ultramarineblue" ng-bind="plan.name"></h1>
+                <p class="manatee" ng-bind="plan.description"></p>
                 <p class="price manatee">R$ {{ plan.price }}</p>
                 <button class="cornflowerblue" href="#">Saiba mais</button>
               </div>
@@ -95,23 +99,48 @@
           </div>  
         </section>
         <section class="testimonials">
-          <div class="row">
-            <div class="col-md-4">
-              <img 
-                src="img/ramona-carter.png" 
-                data-src2x=”img/ramona-carter-2x.png”
-                data-src3x=”img/ramona-carter-3x.png”
-                alt="Ramona Carter" />
-              <div class="info">
-                <p class="name ultramarineblue">Ramona Carter</p>
-                <p class="description manatee">Co-fundador e sócio geral, Administradores.com</p>
+          <div class="testimonials-list">
+            <div class="testimonials-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img 
+                    src="img/ramona-carter.png" 
+                    data-src2x=”img/ramona-carter-2x.png”
+                    data-src3x=”img/ramona-carter-3x.png”
+                    alt="Ramona Carter" />
+                  <div class="info">
+                    <p class="name ultramarineblue">Ramona Carter</p>
+                    <p class="description manatee">Co-fundador e sócio geral, Administradores.com</p>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial">
+                    <blockquote class="manatee">Temos o prazer de trabalhar com o Doutss para tornar mais fácil para nossos fundadores internacionais gastar mais tempo trabalhando na inicialização e menos tempo na papelada.</blockquote>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="testimonial">
-                <blockquote class="manatee">Temos o prazer de trabalhar com o Doutss para tornar mais fácil para nossos fundadores internacionais gastar mais tempo trabalhando na inicialização e menos tempo na papelada.</blockquote>
+            <div class="testimonials-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img 
+                    src="img/john-doe.png" 
+                    data-src2x=”img/john-doe-2x.png”
+                    data-src3x=”img/john-doe-3x.png”
+                    alt="John Doe" />
+                  <div class="info">
+                    <p class="name ultramarineblue">John Doe</p>
+                    <p class="description manatee">Fundador e CEO da Limpeza Express</p>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial">
+                    <blockquote class="manatee">A Doutss facilitou muito o nosso processo de venda e recebimento. O nosso dia a dia se tornou muito mais prático e produtivo.</blockquote>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
         <section class="newsletter">
@@ -169,5 +198,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/testimonials.js"></script>
   </body>
 </html>
