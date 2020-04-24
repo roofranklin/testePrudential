@@ -29,6 +29,7 @@
             margin:0;
             padding:0;
             #hamburguer{
+                display:block;
                 span{
                     font-size:30px;
                     cursor:pointer;
@@ -87,5 +88,34 @@
             }
         }
     } 
+    section{
+        margin-left:10px;
+    }
+    .plans{
+        .plan-item{
+            margin-bottom:40px;
+        }
+        .col-md-4:nth-child(2){
+            .plan-item{
+                margin-bottom:22px;
+            }
+        }
+    }
+    .testimonials{
+        .info{
+            margin-top:20px;
+        }
+        .testimonial{
+            margin-top:25px;
+        }
+    }
+    .newsletter{
+        margin-left:20px;
+        button{
+            float:right;
+            margin-top:10px;
+            margin-right:5px;
+        }
+    }
 
 }

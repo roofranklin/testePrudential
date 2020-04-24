@@ -145,6 +145,7 @@ body{
   #hamburguer {
     transition: margin-left .5s;
     padding: 16px;
+    display:none;
   }
   
   @media screen and (max-height: 450px) {
