@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html ng-app="testePrudential" lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,8 +7,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <!-- Angular CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js" integrity="sha256-b5NvmvUcyr0wpBOLnNbaWH5zKQAivhj8yMYhfXEumQA=" crossorigin="anonymous"></script>
+    <!-- Angular -->
+    <script src="/js/angular/angular.min.js"></script>
     <!-- Title -->
     <title>doutss.</title>
   </head>
@@ -82,29 +82,13 @@
     </header>
     <main>
       <div class="container">
-        <section class="plans">
+        <section ng-controller="listPlans" class="plans">
           <div class="row">
-            <div class="col-md-4">
+            <div ng-repeat="plan in plans" class="col-md-4">
               <div class="plan-item">
-                <h1 class="ultramarineblue">Plano 1</h1>
-                <p class="manatee">Máquina Wi-fi</p>
-                <p class="price manatee">R$ 9,90</p>
-                <button class="cornflowerblue" href="#">Saiba mais</button>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="plan-item">
-                <h1 class="ultramarineblue">Plano 1</h1>
-                <p class="manatee">Máquina Wi-fi</p>
-                <p class="price manatee">R$ 9,90</p>
-                <button class="cornflowerblue" href="#">Saiba mais</button>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="plan-item">
-                <h1 class="ultramarineblue">Plano 1</h1>
-                <p class="manatee">Máquina Wi-fi</p>
-                <p class="price manatee">R$ 9,90</p>
+                <h1 class="ultramarineblue">{{ plan.name }}</h1>
+                <p class="manatee">{{ plan.description }}</p>
+                <p class="price manatee">R$ {{ plan.price }}</p>
                 <button class="cornflowerblue" href="#">Saiba mais</button>
               </div>
             </div>
@@ -178,6 +162,9 @@
       </div>
     </footer>
     <!-- Optional JavaScript -->
+    <script src="js/app.module.js"></script>   
+    <!-- controllers -->
+    <script src="js/listPlansController.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

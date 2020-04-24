@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Plano 1",
+    "description": "Máquina Wi-Fi",
+    "price": "9,90"
+  },
+  {
+    "name": "Plano 2",
+    "description": "Máquina Wi-Fi e Chip",
+    "price": "29,90"
+  },
+  {
+    "name": "Plano 3",
+    "description": "Máquina Chip",
+    "price": "19,90"
+  }
+]
