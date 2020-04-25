@@ -113,11 +113,14 @@
         }
     }
     .newsletter{
-        margin-left:20px;
+        margin-left:5px;
+        input{
+            width:92% !important;
+        }
         button{
             float:right;
             margin-top:10px;
-            margin-right:5px;
+            margin-right:15px;
         }
     }
     .footer-bg-overlay{

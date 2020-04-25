@@ -117,6 +117,7 @@
                 <h1 class="ultramarineblue" ng-bind="plan.name"></h1>
                 <p class="manatee" ng-bind="plan.description"></p>
                 <p class="price manatee">R$ {{ plan.price }}</p>
+                <p class="price-discount text-success">R$ {{ plan.priceDiscount }}</p>
                 <button class="cornflowerblue" href="#">Saiba mais</button>
               </div>
             </div>
@@ -170,13 +171,37 @@
           <div class="row">
             <div class="col-md-10 offset-md-1">
               <h2 class="ultramarineblue">Cadastre-se</h2>
-              <p class="manatee">Ganhe um 5% de desconto no primeiro mês.</p>
+              <p class="manatee">Ganhe 5% de desconto no primeiro mês.</p>
               <div class="row">
-                  <div class="col-md-9">
-                    <input class="form-control form-control-lg" type="email" placeholder="Digite seu email">
+                <form 
+                  action="https://qlin.us19.list-manage.com/subscribe/post-json?u=4a9c2dcf26676334a9b642a98&amp;id=60d2c70f95&c=callback" 
+                  method="post" 
+                  target="_blank" 
+                  novalidate>
+                  <div class="form-row">
+                    <div id="js-form-inputs" class="col-md-9">
+                      <input 
+                        class="email form-control form-control-lg" 
+                        type="email"
+                        name="EMAIL" 
+                        id="mce-EMAIL" 
+                        value="" 
+                        placeholder="Digite seu email">
+                    </div>
+                    <div class="newsletter-hidden" aria-hidden="true"><input type="text" id="js-validate-robot" name="b_a4752870f583bb49a02427b3c_143fa46c21" tabindex="-1" value=""></div>
+                    <div class="col-md-3">
+                      <button 
+                        class="bg-shamrock white subscribe" 
+                        type="submit"
+                        name="subscribe" 
+                        id="mc-embedded-subscribe">Cadastrar
+                      </button>
+                    </div>
                   </div>
-                  <div class="col-md-3">
-                    <button class="bg-shamrock white" type="submit" href="#">Cadastrar</button>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p id="js-subscribe-response"></p>
+                    </div>
                   </div>
               </div>
             </div>
@@ -213,9 +238,8 @@
         </div>
       </div>
     </footer>
-    <!-- Optional JavaScript -->
+    <!-- Angular Files -->
     <script src="js/app.module.js"></script>   
-    <!-- controllers -->
     <script src="js/listPlansController.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -223,8 +247,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Slick Slider -->
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- Custom Javascript -->
     <script type="text/javascript" src="js/testimonials.js"></script>
     <script type="text/javascript" src="js/mobile-menu.js"></script>
+    <script type="text/javascript" src="js/newsletter.js"></script>
     <script>
       new WOW().init();
     </script>
