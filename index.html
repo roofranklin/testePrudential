@@ -29,7 +29,7 @@
       <div class="container">
         <div class="header-top">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-3">
               <div id="offCanvas" class="offCanvas">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Sobre</a>
@@ -60,7 +60,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-sm-9">
               <ul class="desktop-menu">
                 <li><a class="white" href="#">Sobre</a></li>
                 <li><a class="white" href="#">Produtos</a></li>
@@ -71,13 +71,13 @@
         </div>
         <div class="header-content">
           <div class="row">
-            <div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+            <div class="col-12 col-sm-11 col-md-6 wow fadeInUp" data-wow-duration="1s">
               <h1 class="white">O novo padrão em pagamentos</h1>
               <p class="white">A melhor plataforma de software para administrar um negócio na Internet. Lidamos com bilhões de dólares todos os anos para empresas com visão de futuro em todo o mundo.</p>
               <button class="bg-shamrock" href="#">Comece agora</button>
               <button class="bg-white" href="#">Saiba mais</button>
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-sm-1 col-md-6">
               <div class="cellphone wow fadeInLeft" data-wow-duration="1s">
                 <img 
                   src="img/phone-screen.png" 
@@ -112,7 +112,7 @@
       <div class="container">
         <section ng-controller="listPlans" class="plans" data-wow-duration="1s"">
           <div class="row">
-            <div ng-repeat="plan in plans" class="col-md-4 wow fadeInDown">
+            <div ng-repeat="plan in plans" class="col-sm-12 col-md-4 wow fadeInDown">
               <div class="plan-item">
                 <h1 class="ultramarineblue" ng-bind="plan.name"></h1>
                 <p class="manatee" ng-bind="plan.description"></p>

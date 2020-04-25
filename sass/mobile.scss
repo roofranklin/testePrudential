@@ -1,3 +1,114 @@
+/* SMARTPHONES in LANDSCAPE POSITION */
+@media only screen and (max-width: 768.98px) and (min-width: 576px)  { 
+    button{
+        font-size: 1.25rem !important;
+    }
+    .header-bg {
+        width: 230% !important;
+        margin-left: -15% !important;
+        margin-top: calc(-20% - 40px) !important;
+    }
+    .header-bg3 {
+        top: 510px !important;
+        width: 85% !important;
+        margin-left: -5% !important;
+    }
+    .header-content{
+        h1{
+            font-size:2rem;
+        }
+        p{
+            font-size: 1.33rem !important;
+            line-height: 1.75rem !important;
+        }
+    } 
+    .plans{
+        .plan-item{
+            margin-bottom:40px;
+            h1{
+                font-size:2rem !important;
+            }
+            p{
+                font-size:1.5rem !important;
+                line-height:2rem !important;
+            }
+            .price, .price-discount{
+                margin-top:18px;
+                font-size:2rem !important;
+            }
+            .price::after, .price-discount::after{
+                font-size:1.25rem !important;
+                line-height:1.75rem !important;
+            }
+        }
+        .col-md-4:nth-child(2){
+            .plan-item{
+                margin-bottom:22px;
+            }
+        }
+    }
+    .testimonials{
+        .info{
+            margin-top:20px;
+            .name{
+                font-size:1.5rem !important;
+            }
+            .description{
+                font-size: 1rem !important;
+                line-height:1.5rem !important;
+            }
+        } 
+        .testimonial{
+            margin-top:25px;
+            blockquote{
+                font-size:1.25rem !important;
+                line-height:1.75rem !important;
+            }
+        }
+    }
+    .newsletter{
+        margin-left:5px;
+        h2{
+            font-size:1.75rem !important;
+            line-height: 2rem !important;
+        }
+        p{
+            font-size: 1.33rem !important;
+            line-height: 1.75rem !important;
+        }
+        input{
+            width:92% !important;
+            font-size:1.33rem !important;
+        }
+        button{
+            float:right;
+            margin-top:10px;
+            margin-right:15px;
+        }
+    }
+    .footer-bg-overlay{
+        right: -110% !important;
+        margin-top:-35px !important;
+        transform: rotate(-3deg) !important;
+    }
+    .footer-top{
+        border-bottom:60px solid #f2f2f2 !important;
+        border-left: 200vw solid transparent !important;
+    }
+    .footer-content{
+        height:170px !important;
+        width:200% !important;
+        svg{
+            margin-left:calc(50% - 46px) !important;
+            position:unset !important;
+            margin-top:30px !important;
+        }
+        p{
+            font-size:0.95rem;
+        }
+    }
+}
+
 /* SMARTPHONES */
 @media (max-width: 575.98px) { 
     html, body {
@@ -97,6 +208,21 @@
     .plans{
         .plan-item{
             margin-bottom:40px;
+            h1{
+                font-size:2rem !important;
+            }
+            p{
+                font-size:1.5rem !important;
+                line-height:2rem !important;
+            }
+            .price, .price-discount{
+                margin-top:18px;
+                font-size:2rem !important;
+            }
+            .price::after, .price-discount::after{
+                font-size:1.25rem !important;
+                line-height:1.75rem !important;
+            }
         }
         .col-md-4:nth-child(2){
             .plan-item{
@@ -107,15 +233,35 @@
     .testimonials{
         .info{
             margin-top:20px;
-        }
+            .name{
+                font-size:1.5rem !important;
+            }
+            .description{
+                font-size: 1rem !important;
+                line-height:1.5rem !important;
+            }
+        } 
         .testimonial{
             margin-top:25px;
+            blockquote{
+                font-size:1.25rem !important;
+                line-height:1.75rem !important;
+            }
         }
     }
     .newsletter{
         margin-left:5px;
+        h2{
+            font-size:1.75rem !important;
+            line-height: 2rem !important;
+        }
+        p{
+            font-size: 1.33rem !important;
+            line-height: 1.75rem !important;
+        }
         input{
             width:92% !important;
+            font-size:1.33rem !important;
         }
         button{
             float:right;
