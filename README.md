@@ -1,7 +1,5 @@
 # Teste de front-end para a Prudential do Brasil
 
-# Teste de front-end para a Prudential do Brasil
-
 **Linguagens utilizadas:**
 HTML, CSS e Javascript
 
