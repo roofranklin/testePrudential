@@ -4,9 +4,12 @@
         font-size: 1.25rem !important;
     }
     .header-bg {
-        width: 230% !important;
+        width: 120% !important;
         margin-left: -15% !important;
-        margin-top: calc(-20% - 40px) !important;
+        margin-top: calc(-10% - 40px) !important;
+    }
+    .header-bg2{
+        left:590px !important;
     }
     .header-bg3 {
         top: 510px !important;
@@ -87,17 +90,17 @@
         }
     }
     .footer-bg-overlay{
-        right: -110% !important;
+        right: -20% !important;
         margin-top:-35px !important;
         transform: rotate(-3deg) !important;
     }
     .footer-top{
         border-bottom:60px solid #f2f2f2 !important;
-        border-left: 200vw solid transparent !important;
+        border-left: 100vw solid transparent !important;
     }
     .footer-content{
         height:170px !important;
-        width:200% !important;
+        width:100% !important;
         svg{
             margin-left:calc(50% - 46px) !important;
             position:unset !important;
